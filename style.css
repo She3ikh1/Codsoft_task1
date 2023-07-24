@@ -1,0 +1,474 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    border:none;
+
+ 
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+  :root{
+--yellow:#f9ca24;
+}
+
+
+*::selection{
+    background: #f9ca24;
+    color: rgb(44, 69, 10);
+}
+
+html{
+    font-size: 62.5%;
+    overflow: auto;
+}
+html ::-webkit-scrollbar{
+    width: 13px;
+    height: 13px;
+}
+html ::-webkit-scrollbar-track{
+    background: rgb(0, 0, 0);
+}
+html ::-webkit-scrollbar-thumb{
+    background: #f9ca24;
+}
+
+body{
+    background: rgb(0, 0, 0);
+    overflow-x: hidden;
+    padding-left: 35rem;
+} 
+section{
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+/* section.education{
+    min-height: 100vh;
+    padding: 1rem;
+} */
+.btn{
+    padding: 15px 15px;
+    background: #2f2f2b;
+    color:#ffffff;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 30px;
+}
+.btn:hover{
+    background-color: #f9ca24;
+}
+.btn i{
+   padding-left: 10px;
+    font-size: 2.5rem;
+}
+.heading{
+    text-align: center;
+    justify-content: center;
+    border-bottom: 1px solid grey;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: white;
+    font-size: 40px;
+}
+.heading span{
+    color:#f9ca24;
+}
+
+ header{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1000;
+    background: rgb(28, 27, 27);
+    height:100%;
+    width:27rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+
+} 
+header .user img{
+    height: 100px;
+    width: 100px;
+    border-radius:50%;
+    border: 5px solid  #f9ca24;
+}
+header .user .name{
+    font-size: 40px;
+    color :white;
+}
+header .user .post{
+    font-size: 20px;
+    color :white;
+    margin-bottom: 20px;
+}
+h1.name{
+    color: white;
+}
+header .nabar{
+    width: 100px;
+    
+}
+header .navbar li{
+    list-style: none;
+    padding: 5px;
+}
+
+header .navbar li  a{
+    display:block;
+  font-size:20px;
+  margin:2px;;
+    padding: 20px ;
+    padding-right: 20px;
+    padding-left: 20px;
+    background: #2f2f2b;
+    color:white;
+    border-radius: 50px;
+}
+
+header .navbar li  a:hover{
+  background: #f9ca24;
+}
+
+#mennu{
+position: fixed;
+top:2rem;
+right:2rem;
+background:#ffffff;
+color: #000000;
+cursor: pointer;
+font-size:2.5rem;
+padding:1rem 1.5rem;
+z-index:1000;
+display: none;
+}
+
+
+
+.home{
+    display: flex;
+   justify-content: center;
+    flex-flow: column;
+    padding-top:20px;
+
+}
+.home h3{
+    font-size:2.5rem;
+    color: white;
+
+}
+    
+    
+.home h3{
+    font-size:2.5rem;
+    color: white;
+
+}
+    
+.home h1{
+    font-size:5rem;
+    color: white;
+}
+
+.home h1 span{
+   
+    color: #f9ca24
+}
+
+
+.home p{
+    font-size:2rem;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.about .row{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 40px;
+}
+
+
+.about .row .info h3{
+    padding: 10px;
+    font-size: 20px;
+    color: #f9ca24;
+    
+}
+.about p{
+    text-align: justify;
+}
+
+.about .row .info h3 span{
+   
+    color: #f8f8f8;
+    margin-right: 10px;
+}
+/* .about .btn{
+ margin-left: 450px;
+ color: white;
+background-color: #34292998;
+
+}
+.about .btn:hover{
+    cursor: pointer;
+    color:white;
+   background-color:#f9ca24;
+   
+   } */
+ .about .row .info{
+    padding: 40px;
+    border-right: 2px solid #f9ca24;
+    border-left: 2px solid #f9ca24; /* This adds a 2px solid border with the color #f9ca24 */
+    border-radius: 20px; 
+}
+
+.about .row .info .btn{
+    margin-top: 50px;
+}
+
+
+/* education css */
+.education .box-container{
+    display: flex;
+    /* margin-right: 150px; */
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.education .box-container .box{
+    
+   border-left: 2px solid white;
+   margin:40px;
+   padding-left:40px ;
+   position: relative;
+   max-width: 300px;
+}
+
+.education .box-container .box span{
+   font-size: 20px;
+   color: #f9ca24;
+   background:#222;
+   border-radius:40px;
+   padding-left: 10px;
+   padding-right: 10px;
+ }
+ 
+
+ .education .box-container .box h3{
+    font-size: 20px;
+    color: white;
+    padding-top: 1.5rem;
+
+ }
+
+ .education .box-container .box p{
+    font-size: 15px;
+    color: white;
+    padding: 1rem;
+    text-align: justify;
+
+
+ }
+ 
+ .education .box-container .box i{
+    font-size: 15px;
+    color: white;
+    padding: 1rem;
+    background-color: #f9ca24;
+    border-radius: 35px;
+
+ }
+
+/* skills CSS */
+
+ .skills .box-container{
+     /* margin-right:150px;  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.skills .box-container .box{
+  
+    border-left: 2px solid white;
+    margin:40px;
+    padding-left:40px ;
+    position: relative;
+    max-width: 300px;
+ }
+
+ .skills .box-container .box span{
+    font-size: 20px;
+    color: #f9ca24;
+    background:#222;
+    border-radius:40px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+
+ .skills .box-container .box p{
+    font-size: 15px;
+    color: white;
+    padding: 1rem;
+    text-align: justify;
+
+ }
+ 
+
+ .skills .box-container .box i{
+    font-size: 15px;
+    color: white;
+    padding: 1rem;
+    background-color: #f9ca24;
+    border-radius: 35px;
+
+ }
+
+ .contact .row{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+ }
+
+ 
+ .contact .row .content{ 
+ flex:1 1 30rem;
+    padding: 4rem;
+    padding-bottom: 0;
+ }
+ .contact .row form{
+   flex: 1 1 45rem;
+    padding:2rem;
+    margin: 2rem;
+    margin-bottom:4rem;
+ }
+ .contact .row  form .box{
+padding: 1.4rem;
+margin: 1rem 0;
+font-size: 1.7rem;
+background: #222;
+color:#ffffff;
+text-transform: none;
+width:100%;
+ }
+
+ .contact .row  form  .message{
+    height:15rem;
+    resize: none;
+ }
+ 
+ .contact .row .content .title{
+    text-decoration: uppercase;
+    color: #f8f8f8;
+    font-size: 3rem;
+    padding-bottom:2rem;
+    margin-top: 100px;
+ }
+
+ .contact .row .content .info h3 {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: #f8f8f8;
+    padding: 1rem 0;
+    font-weight:normal;
+ }
+
+ 
+ .contact .row .content .info h3 i{
+    padding-right: 1rem;
+    
+    color:#f9ca24;
+ }
+
+ .contact .row  form .box::placeholder{
+    text-transform: capitalize;
+ }
+
+
+ .top {
+    position: fixed;
+    bottom: 5rem;
+    right: 2rem;
+   z-index:100;
+   display:none ;
+ background: transparent;
+ 
+
+  }
+
+
+
+
+
+
+
+
+
+
+ @media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+    .home{
+        padding: 1rem 2.5rem;
+    }
+    
+}
+
+@media (max-width:991px){
+    header{
+        left:-120%;
+    }
+    #mennu{
+        display: block;
+    }
+    header.toggle{
+        left:0%;
+    }
+    body{
+        padding:0;
+    }
+}
+
+@media (max-width:768px){
+    html{
+        font-size: 50%;
+    }
+    body{
+        padding-left: 2rem;
+    }
+}
+    
+  
+@media (max-width:400px){
+    header{
+        width:100vw;
+    }
+    .heading{
+        margin:0 3rem;
+    }
+    .education .box-container .box{
+        max-width: 100;
+    }
+    .skills .box-container .box{
+        max-width: 100;
+    }
+    .contact .row form{
+        margin: 3rem 0;
+
+    }
+}
